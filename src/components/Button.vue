@@ -13,41 +13,41 @@ export default {
   props: {
     label: {
       type: String,
-      required: true,
+      required: true
     },
     primary: {
       type: Boolean,
-      default: false,
+      default: false
     },
     secondary: {
       type: Boolean,
-      default: false,
+      default: false
     },
     size: {
       type: String,
-      default: "medium",
+      default: 'medium',
       validator: function(value) {
-        return ["small", "medium", "large"].indexOf(value) !== -1;
-      },
+        return ['small', 'medium', 'large'].indexOf(value) !== -1
+      }
     },
     backgroundColor: {
       type: String,
-      required: false,
-    },
+      required: false
+    }
   },
   computed: {
     style() {
       return {
-        backgroundColor: this.backgroundColor,
-      };
-    },
-  },
-};
+        backgroundColor: this.backgroundColor
+      }
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 .button {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
   border-radius: 3em;

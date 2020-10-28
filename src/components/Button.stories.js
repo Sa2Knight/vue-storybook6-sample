@@ -12,13 +12,17 @@ const Template = (args, { argTypes }) => ({
 
 export const Primary = Template.bind({})
 Primary.args = {
-  primary: true,
   label: 'プライマリーボタン',
-  size: 'medium'
+  primary: true,
+  scondary: false,
+  size: 'medium',
+  backgroundColor: ''
 }
 
 export const Secondary = Template.bind({})
 Secondary.args = {
-  scondary: true,
-  label: 'セカンダリーボタン'
+  ...Primary.args,
+  label: 'セカンダリーボタン',
+  primary: false,
+  scondary: true
 }

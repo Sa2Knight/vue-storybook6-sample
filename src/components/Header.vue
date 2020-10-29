@@ -2,7 +2,7 @@
   <header>
     <h1>Vue × Storybook 6 Sample App</h1>
     <div class="buttons">
-      <template v-if="user">
+      <template v-if="user.id">
         <MyButton size="small" label="ログアウト" @onClick="$emit('onLogout')" />
       </template>
       <template v-else>

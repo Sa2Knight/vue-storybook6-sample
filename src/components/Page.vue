@@ -17,7 +17,7 @@ export default {
   components: { MyHeader },
   data() {
     return {
-      user: null
+      user: {}
     }
   },
   methods: {
@@ -25,7 +25,7 @@ export default {
       this.user = { id: 1, name: 'sasaki' }
     },
     logout() {
-      this.user = null
+      this.user = {}
     },
     signUp() {
       // 会員登録ページが開かれるイメージ

@@ -2,7 +2,17 @@ import Header from './Header'
 
 export default {
   title: 'Header',
-  parameters: { actions: { argTypesRegex: '^on.*' } }
+  argTypes: {
+    onLogin: {
+      action: 'onLogin'
+    },
+    onLogout: {
+      action: 'onLogout'
+    },
+    onSignUp: {
+      action: 'onSignUp'
+    }
+  }
 }
 
 const Template = (args, { argTypes }) => ({

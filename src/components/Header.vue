@@ -47,5 +47,10 @@ header {
   button + button {
     margin-left: 10px;
   }
+  @media (max-width: (480px)) {
+    button {
+      display: none !important;
+    }
+  }
 }
 </style>

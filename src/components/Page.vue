@@ -44,5 +44,10 @@ main {
     column-gap: 25px;
     row-gap: 1em;
   }
+  @media screen and (max-width: 480px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 </style>

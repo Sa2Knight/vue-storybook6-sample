@@ -1,7 +1,18 @@
 import Button from './Button'
 
 export default {
-  title: 'Button'
+  title: 'Button',
+  argTypes: {
+    size: {
+      control: {
+        type: 'inline-radio',
+        options: ['small', 'medium', 'large']
+      }
+    },
+    backgroundColor: {
+      control: 'color'
+    }
+  }
 }
 
 const Template = (args, { argTypes }) => ({

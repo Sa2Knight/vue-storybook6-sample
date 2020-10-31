@@ -7,16 +7,16 @@ const Template = (args, { argTypes }) => ({
   template: `<Page />`
 })
 
-export const ForTwitter = Template.bind({})
-ForTwitter.parameters = {
-  backgrounds: {
-    default: 'twitter'
+export const ForTablet = Template.bind({})
+ForTablet.parameters = {
+  viewport: {
+    defaultViewport: 'ipad'
   }
 }
 
-export const ForFacebook = Template.bind({})
-ForFacebook.parameters = {
-  backgrounds: {
-    default: 'facebook'
+export const ForSmartPhone = Template.bind({})
+ForSmartPhone.parameters = {
+  viewport: {
+    defaultViewport: 'iphone6'
   }
 }

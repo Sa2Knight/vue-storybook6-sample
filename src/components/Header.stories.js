@@ -1,16 +1,12 @@
 import Header from './Header'
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 
 export default {
   title: 'Header',
-  argTypes: {
-    onLogin: {
-      action: 'onLogin'
-    },
-    onLogout: {
-      action: 'onLogout'
-    },
-    onSignUp: {
-      action: 'onSignUp'
+  parameters: {
+    viewport: {
+      viewports: INITIAL_VIEWPORTS,
+      defaultViewport: 'iphone6'
     }
   }
 }

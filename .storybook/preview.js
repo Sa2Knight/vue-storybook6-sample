@@ -1,15 +1,7 @@
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
+
 export const parameters = {
-  backgrounds: {
-    default: 'twitter',
-    values: [
-      {
-        name: 'twitter',
-        value: '#00aced'
-      },
-      {
-        name: 'facebook',
-        value: '#3b5998'
-      }
-    ]
+  viewport: {
+    viewports: INITIAL_VIEWPORTS
   }
 }

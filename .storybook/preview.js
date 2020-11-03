@@ -10,6 +10,10 @@ export const globalTypes = {
   }
 }
 
+export const parameters = {
+  layout: 'padded'
+}
+
 export const decorators = [
   (story, context) => ({
     props: {

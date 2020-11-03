@@ -2,16 +2,9 @@ import Header from './Header'
 
 export default {
   title: 'Header',
-  argTypes: {
-    onLogin: {
-      action: 'onLogin'
-    },
-    onLogout: {
-      action: 'onLogout'
-    },
-    onSignUp: {
-      action: 'onSignUp'
-    }
+  component: Header,
+  parameters: {
+    layout: 'fullscreen'
   }
 }
 
@@ -20,9 +13,6 @@ const Template = (args, { argTypes }) => ({
   components: { Header },
   template: `
     <Header
-      @onLogout="onLogout"
-      @onLogin="onLogin"
-      @onSignUp="onSignUp"
       v-bind="$props"
     />
   `

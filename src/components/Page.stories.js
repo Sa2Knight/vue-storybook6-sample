@@ -1,5 +1,11 @@
 import Page from './Page'
-export default { title: 'Page' }
+export default {
+  title: 'Page',
+  component: Page,
+  parameters: {
+    layout: 'centered'
+  }
+}
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),

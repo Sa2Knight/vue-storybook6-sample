@@ -2,16 +2,9 @@ import Button from './Button'
 
 export default {
   title: 'Button',
-  argTypes: {
-    size: {
-      control: {
-        type: 'inline-radio',
-        options: ['small', 'medium', 'large']
-      }
-    },
-    backgroundColor: {
-      control: 'color'
-    }
+  component: Button,
+  parameters: {
+    layout: 'centered'
   }
 }
 
@@ -25,9 +18,7 @@ export const Primary = Template.bind({})
 Primary.args = {
   label: 'プライマリーボタン',
   primary: true,
-  scondary: false,
-  size: 'medium',
-  backgroundColor: ''
+  secondary: false
 }
 
 export const Secondary = Template.bind({})
@@ -35,5 +26,5 @@ Secondary.args = {
   ...Primary.args,
   label: 'セカンダリーボタン',
   primary: false,
-  scondary: true
+  secondary: true
 }
